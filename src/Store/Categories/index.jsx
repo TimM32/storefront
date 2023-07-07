@@ -6,7 +6,7 @@ export const selectCategory = (category) => ({
   const initialState = {
     categories: [
       { id: 1, name: 'electronics', displayName: 'Electronics' },
-      { id: 2, name: 'food', displayName: 'Food' },
+      { id: 2, name: 'foods', displayName: 'Foods' },
       { id: 3, name: 'clothing', displayName: 'Clothing' },
       { id: 4, name: 'weapons', displayName: 'Weapons' },
     ],

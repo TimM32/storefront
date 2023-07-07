@@ -46,17 +46,17 @@ const Categories = () => {
                   borderRadius: 4,
                   padding: 2,
                   marginRight: 2,
-                  width: '150px', // Set a fixed width for all category boxes
-                  backgroundImage: getCategoryBackground(category.name),// Apply the background image
+                  width: '150px', 
+                  backgroundImage: getCategoryBackground(category.name),
                   textAlign: 'center',
                   fontSize: '1rem',
                   backgroundSize: 'cover',
                   backgroundRepeat: 'no-repeat',
                   backgroundPosition: 'center',
-                  color: '#fff', // Set text color to white for better visibility
+                  color: '#fff', 
                   '& .MuiTypography-root': {
-                    fontWeight: 'bold', // Make the text bold
-                    fontSize: '1.1rem', // Increase the font size slightly
+                    fontWeight: 'bold', 
+                    fontSize: '1.1rem', 
                   },
                 }}
               >

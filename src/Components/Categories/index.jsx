@@ -1,6 +1,10 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { selectCategory, getCategories } from '../../Store/Categories';
 import { Box, Typography } from '@mui/material';
+import electronicBackground from '../../../assets/images/electronics.jpg';
+import weaponsBackground from '../../../assets/images/weapons.jpg';
+import foodsBackground from '../../../assets/images/foodsBackground.jpg';
+import clothingBackground from '../../../assets/images/clothing.jpg';
 
 
 const Categories = () => {
@@ -14,9 +18,9 @@ const Categories = () => {
       const getCategoryBackground = (categoryName) => {
         switch (categoryName) {
           case 'electronics':
-            return `url(${electronicsBackground})`;
+            return `url(${electronicBackground})`;
           case 'food':
-            return `url(${foodBackground})`;
+            return `url(${foodsBackground})`;
           case 'clothing':
             return `url(${clothingBackground})`;
           case 'weapons':

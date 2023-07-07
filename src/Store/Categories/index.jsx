@@ -1,5 +1,7 @@
+export const Select_Category = 'Select_Category'
+
 export const selectCategory = (category) => ({
-    type: SELECT_CATEGORY,
+    type: Select_Category,
     payload: category,
   });
 
@@ -19,7 +21,7 @@ export const getActiveCategory = (state) => state.activeCategory;
 const categoriesReducer = (state = initialState, action) => {
   console.log('Action:', action);
   switch (action.type) {
-    case SELECT_CATEGORY:
+    case Select_Category:
       console.log('Selected Category:', action.payload);
       return { ...state, activeCategory: action.payload };
     default:

@@ -25,3 +25,43 @@ const Categories = () => {
             return 'none';
         }
       };
+
+      return (
+        <div>
+          <Typography variant="h4" component="h1" align="center">
+            Categories
+          </Typography>
+          <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: 4 }}>
+            {categories.map((category) => (
+              <Box
+                key={category.id}
+                onClick={() => handleCategoryClick(category)}
+                sx={{
+                  cursor: 'pointer',
+                  border: '1px solid #ccc',
+                  borderRadius: 4,
+                  padding: 2,
+                  marginRight: 2,
+                  width: '150px', // Set a fixed width for all category boxes
+                  backgroundImage: getCategoryBackground(category.name),// Apply the background image
+                  textAlign: 'center',
+                  fontSize: '1rem',
+                  backgroundSize: 'cover',
+                  backgroundRepeat: 'no-repeat',
+                  backgroundPosition: 'center',
+                  color: '#fff', // Set text color to white for better visibility
+                  '& .MuiTypography-root': {
+                    fontWeight: 'bold', // Make the text bold
+                    fontSize: '1.1rem', // Increase the font size slightly
+                  },
+                }}
+              >
+                <Typography variant="body1">{category.displayName}</Typography>
+              </Box>
+            ))}
+          </Box>
+        </div>
+      );
+    }
+    
+    export default Categories;

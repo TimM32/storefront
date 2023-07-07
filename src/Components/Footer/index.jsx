@@ -1,7 +1,7 @@
 // Might need to import something here...come back to check later
 
 const Footer = () => {
-    return <footer>&copy; 2023 Virtual Store. All rights reserved.</footer>;
+    return <footer>Tim Maupin Productions 2023</footer>;
   };
   
   export default Footer;

@@ -3,7 +3,7 @@ import { selectCategory, getCategories } from '../../Store/Categories';
 import { Box, Typography } from '@mui/material';
 import electronicBackground from '../../../assets/images/electronics.jpg';
 import weaponsBackground from '../../../assets/images/weapons.jpg';
-import foodsBackground from '../../../assets/images/foodsBackground.jpg';
+import foodsBackground from '../../../assets/images/foodsbackground.jpg';
 import clothingBackground from '../../../assets/images/clothing.jpg';
 
 

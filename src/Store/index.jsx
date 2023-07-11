@@ -3,7 +3,7 @@ import categoriesReducer from './Categories';
 import productReducer from './Products';
 
 const mainReducer = combineReducers({
-    catergories: categoriesReducer,
+    categories: categoriesReducer,
     products: productReducer,
 });
 
